@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header with Dropdowns and Language Selector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
+      <!-- Use container for padding -->
+      <div class="container-fluid bg-color_padding">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./public/CancerLogNew.png" alt="Logo" width="165px">
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items and Button (collapsible in mobile view) -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- ms-auto pushes items to the right -->
+            <!-- Home Dropdown -->
+            <li class="nav-item">
+              <a class="nav-link  menu-link" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              
+            </li>
+
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link menu-link dropdown-toggle  font-sub-menu" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="#">About Conference</a></li>
+                <li><a class="dropdown-item" href="#">Venue & Accommodation</a></li>
+                <li><a class="dropdown-item" href="#">General Information</a></li>
+                <li><a class="dropdown-item" href="#">Conference Brochure</a></li>
+                <li><a class="dropdown-item" href="#">About Organizer</a></li>
+              </ul>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link menu-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Programme                               
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Scientific Program</a></li>
+                <li><a class="dropdown-item" href="#">Organizing Committee</a></li>
+                <li><a class="dropdown-item" href="#">Speakers</a></li>
+                <li><a class="dropdown-item" href="#">Scientific Topics</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link menu-link " href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Abstract & Submission
+                </a>
+                
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link  menu-link" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Contact
+                </a>
+                
+              </li>
+          </ul>
+
+          <!-- Button aligned right next to nav items -->
+          <button class="btn btn-primary ms-2" type="button">REGISTER NOW</button>
+
+          <!-- Language Selector Dropdown -->
+          <div class="dropdown ms-2">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+              <li><a class="dropdown-item" href="#">Hindi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero_section" >
+    <div style="
+    background-image: url(./public/international-cancer-research-conference-8776\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    ">
+   <div class="display_flex container">
+    <div>
+    </div>
+<div class="inside_img" style="
+    background-image: url(./public/banner-content-bg-3.png);">
+    <h4 class="text-center">International Conference on</h4>
+    <h1>Cancer Science and Research</h1>
+    <h4><span class="Span_index"style="width: 80px">Dates :</span> November 17-19, 2025<br>
+        <span class="Span_index" style="width: 80px">Venue :</span>
+Singapore and Online                                    </h4>
+
+<button class="btn btn-primary mt-3" type="button">Submit Abstract</button>
+</div>
+    </div>
+
+    </div>
+   </section>
+ <section class="Announcement">
+    <div class="bg_background p-4">
+        <div class="flex_Icon" >
+            <div class="bell_ring">
+     <img src="./public/icon-bell.png">
+            </div>
+            <div>
+       <p class="text">Launch Announcement</p>
+            </div>
+            <div class="flex_Icon" >
+                <div class="bell_ring">
+         <img src="./public/icon-bell.png">
+                </div>
+                <div>
+           <p class="text">Launch Announcement</p>
+                </div>
+                <div class="flex_Icon" >
+                    <div class="bell_ring">
+                      <img src="./public/icon-bell.png">
+                    </div>
+                    <div>
+               <p class="text">Launch Announcement</p>
+                    </div>
+        </div>
+    </div>
+ </section>
+ <section style="
+ background-image: url(./public/about-virus-img.png);
+ background-position: right bottom;
+ background-repeat: no-repeat;
+ background-size: auto;
+">
+ <div class="container py-5">
+   <div class="row">
+     <!-- Column with 7 units width on medium (md) screens and above -->
+     <div class="col-md-9">
+       <p class="text-center para-text"><img src="https://www.transparentpng.com/thumb/lines/rNEwAu-lines-wonderful-picture-images.png" width="50px" height="2px" class="line" style="
+ background-color: darkred;
+"> &nbsp; ABOUT Conference</p>
+<h2 style="text-transform: none;">CANCER 2025 - Hybrid Event</h2>
+
+<div class="box_shadow">
+ <p>The<b class="text_color"> International Conference on Cancer Science and Research </b> ( <b class="text_color">Hybrid Event</b>) will be held from <b class="text_color">November 17-19, 2025</b>, in <b class="text_color">Singapore and Online</b>. This premier global event is dedicated to advancing knowledge and collaboration in the field of Oncology. Cancer 2025 will bring together leading researchers, oncologists, healthcare professionals, and industry experts from across the globe to discuss the latest breakthroughs in cancer research and treatment. The conference will feature a comprehensive program, including keynote presentations from renowned experts, interactive oral and poster sessions, and dynamic panel discussions. Key topics will encompass a wide range of areas in cancer science, such as molecular biology, cancer immunotherapy, early detection and diagnostics, and prevention strategies. Attendees will have ample opportunities to connect with peers, exchange ideas, and establish professional relationships through networking events, and informal gatherings, fostering collaboration and innovation essential for tackling the challenges in cancer research and treatment.</p>
+<p>Networking is a key component of the conference, offering participants the chance to connect with fellow professionals and establish collaborative relationships that can lead to impactful research partnerships. Join us to be part of a transformative event that aims to advance cancer research, improve patient care, and ultimately contribute to a world free of cancer. Your participation will play a crucial role in shaping the future of oncology and fostering collaboration among the global cancer community. Together, we can make significant strides in understanding and combating cancer.</p></div>
+<div class="Button_Center"><button class="btn btn-primary mt-5" type="button" style="
+">LEARN MORE ABOUT Conference</button></div>
+     </div>
+     <!-- Column with 5 units width on medium (md) screens and above -->
+     <div class="col-md-3">
+       <p class="text-center para-text"><img src="https://www.transparentpng.com/thumb/lines/rNEwAu-lines-wonderful-picture-images.png" width="50px" height="2px" class="line" style="
+ background-color: darkred;
+"></p>
+<h2 style="text-transform: none;"> QUICK LINKS</h2>
+ <div class="Box_Flex Box_1">
+ <div>
+  <img src="./public/icon-abstract.png" style="
+ width: 30px;
+">
+ </div>
+ <div>
+     <p class="small">Submit Abstract </p>
+
+         
+ </div>
+     
+   </div>
+   <div class="Box_Flex Box_2">
+     <div>
+      <img src="./public/icon-brochure.png" style="
+     width: 30px;
+ ">
+     </div>
+     <div>
+         <p class="small">Conference Brochure  </p>
+   
+             
+     </div>
+         
+       </div>
+       <div class="Box_Flex Box_3">
+         <div>
+          <img src="./public/icon-register.png" style="
+         width: 30px;
+     ">
+         </div>
+         <div>
+             <p class="small">Quick Register  </p>
+       
+                 
+         </div>
+             
+           </div>
+           <div class="Box_Flex Box_4">
+             <div>
+              <img src="./public/icon-speakers.png" style="
+             width: 30px;
+         ">
+             </div>
+             <div>
+                 <p class="small">Speakers </p>
+           
+                     
+             </div>
+                 
+               </div>
+ </div>
+</section>
+<section>
+  <div class="container py-4">
+    <h2 class="text-center">ABSTRACT TOPICS</h2>
+    <div class="mt-5 Box_flex">
+      <div class="Border_one ">
+        <h3>Cancer Detection and Diagnosis</h3>
+        <p class="card_para">Cancer detection and diagnosis are critical steps ...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div>
+    <div class="Border_one ">
+        <h3>Prevention and Epidemiology</h3>
+        <p class="card_para">Cancer prevention and epidemiology play critical r...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div><div class="Border_one ">
+        <h3>Case Reports</h3>
+        <p class="card_para">Cancer case reports are essential components of me...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div><div class="Border_one ">
+        <h3>Cancer Treatments</h3>
+        <p class="card_para">Cancer treatments encompass a diverse array of app...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div></div>
+  <div class="mt-4 Box_flex">
+      <div class="Border_one ">
+        <h3>Cancer Genetics and Genomics</h3>
+        <p class="card_para">Cancer genetics and genomics are critical fields t...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div>
+    <div class="Border_one ">
+        <h3>Palliative Care and Supportive Oncology</h3>
+        <p class="card_para">Palliative care and supportive oncology play a cru...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div><div class="Border_one ">
+        <h3>Cancer Research and Clinical Trials</h3>
+        <p class="card_para">Cancer research and clinical trials are critical c...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div><div class="Border_one ">
+        <h3>Survivorship and <br> Long Term Care</h3>
+        <p class="card_para">Cancer survivorship and long-term care encompass t...</p>
+        <div class="right_align">
+          <img src="./public/arrow-ss.png" width="35px">
+        </div>
+      </div></div>
+
+<div class="Button_Center"><button class="btn btn-primary mt-5" type="button"> SUBMIT ABSTRACT</button><button class="btn btn-primary  second-btn mt-5" type="button" 
+> VIEW ALL TOPICS</button></div></div>
+</section>
+<section>
+  <div class="container py-4">
+    <h2 class="text-center"> ORGANIZING COMMITTEE</h2>
+    <div class="mt-5 Box_flex" style="
+    width: 80%;
+    margin: 0 auto;
+">
+      <div class="Border_one next_border ">
+        <img src="./public/yan-shen-shan-3104.jpg" width="100%" style="
+    border-radius: 40px;
+">
+      <div style="
+    padding: 20px 20px 23px 20px;
+">  <h4 class="color" style="
+    font-weight: 400;
+    margin-bottom: 0px;
+">Dean</h4>
+<h4 style="
+    font-family: 'Poppins';
+    font-weight: 700;
+" class="color">Yan-Shen Shan</h4><p class="card_para">National Cheng Kung University Hospital, Taiwan</p>
+        
+      </div></div>
+    <div class="Border_one next_border ">
+        <img src="./public/sergey-suchkov-9745.jpg" width="100%" style="
+    border-radius: 40px;
+">
+      <div style="
+    padding: 20px 20px 23px 20px;
+">  <h4 class="color" style="
+    font-weight: 400;
+    margin-bottom: 0px;
+">Vice-Director</h4>
+<h4 style="
+    font-family: 'Poppins';
+    font-weight: 700;
+" class="color">Sergey Suchkov</h4><p class="card_para">National Center for Human...</p>
+        
+      </div></div><div class="Border_one next_border ">
+        <img src="./public/julia-sidorova-5391.jpg"  width="100%" style="
+    border-radius: 40px;
+">
+      <div style="
+    padding: 20px 20px 23px 20px;
+">  <h4 class="color" style="
+    font-weight: 400;
+    margin-bottom: 0px;
+">Doctor</h4>
+<h4 style="
+    font-family: 'Poppins';
+    font-weight: 700;
+" class="color">Julia Sidorova </h4><p class="card_para">Instituto Carlos III de Salud (CIBER- ...</p>
+        
+      </div></div><div class="Border_one next_border ">
+        <img src="./public/henrique-manuel-dos-santos-faneca-6644.jpg" width="100%" style="
+    border-radius: 40px;
+">
+      <div style="
+    padding: 20px 20px 23px 20px;
+">  <h4 class="color" style="
+    font-weight: 400;
+    margin-bottom: 0px;
+">Principal Investigator</h4>
+<h4 style="
+    font-family: 'Poppins';
+    font-weight: 700;
+" class="color">Henrique Manuel dos Santos Faneca</h4><p class="card_para">University of Coimbra (CNC ....</p>
+        
+      </div></div></div>
+
+
+<div class="Button_Center"><button class="btn btn-primary mt-5" type="button">View All</button></div>
+  
+
+</div>
+</section>
+    <section>
+      <div class="container py-5">
+     <div>
+            <p class="text-center para-text"><img src="https://www.transparentpng.com/thumb/lines/rNEwAu-lines-wonderful-picture-images.png" width="50px" height="2px" class="line" style="
+      background-color: darkred;
+     "></p>
+     <h2 style="text-transform: none;">SUPPORTING JOURNAL</h2>
+     
+     
+     
+          </div>
+     
+          <div style="
+        width: 80%;
+        margin: 0 auto;
+    ">
+     <div class=" mt-5 support_card center">
+         
+              <h5>Mathews Journal of Cancer Science</h5>
+     <div class="Box_flex mt-3">
+         <div class=""><img width="100%" src="./public/mathews-journal-of-cancer-science-1882.jpg" style="
+        width: 178px;
+    ">
+         </div>
+     <div>
+      <div class="Box_flex mt-4 mb-3">
+      <div class="flex_1">
+        <div>
+            <i class="bi bi-chevron-right" style="
+        font-size: 12px;
+        color: #cb2578;
+    "></i>
+        </div>
+        <div>
+            <p style="
+        margin: 3px 0px 0px 0px;
+    ">  &nbsp; &nbsp; ISSN: 2474-6797  </p>
+        </div>
+    </div>
+    <div class="flex_1">
+        <div>
+            <i class="bi bi-chevron-right" style="
+        font-size: 12px;
+        color: #cb2578;
+    "></i>
+        </div>
+        <div>
+            <p style="
+        margin: 3px 0px 0px 0px;
+    "> &nbsp; &nbsp; Indexed in </p>
+        </div>
+    </div><div class="flex_1">
+        <div>
+            <i class="bi bi-chevron-right" style="
+        font-size: 12px;
+        color: #cb2578;
+    "></i>
+        </div>
+        <div>
+            <p style="
+        margin: 3px 0px 0px 0px;
+    "> &nbsp; &nbsp;  Indexed in </p>
+        </div>
+    </div></div>
+    
+    
+    
+    <p>The Mathews Journal of Cancer Science is proud to serve as the supporting journal for this upcoming event on Cancer Science and Research. As part of this collaboration, a DOI will be assigned to the conference proceedings book, ensuring the research and findings presented at the event are globally accessible an..</p>
+    
+    <div class="flex_1" style="
+        gap: 20px;
+    "><div class=" flex_1 mt-4"><button class="only_text" style="height: fit-content;"> View Details   </button>
+    <svg viewBox="0 0 24 24" class=" nddnvd1 nddnvd6 _17x85qk0" style="
+        width: 23px;
+        margin: -4px 0px 0px 0px;
+        color: rgb(203, 37, 120);
+    "><path fill="currentColor" fill-rule="evenodd" d="M5.438 6.75h10.7L4.983 17.906l1.326 1.328 11.13-11.13V18.75h1.875V4.875H5.438V6.75Z" clip-rule="evenodd"></path></svg></div><div class=" flex_1 mt-4"><button class="only_text" style="height: fit-content;"> View Details   </button>
+    <svg viewBox="0 0 24 24" class=" nddnvd1 nddnvd6 _17x85qk0" style="
+        width: 23px;
+        margin: -4px 0px 0px 0px;
+        color: rgb(203, 37, 120);
+    "><path fill="currentColor" fill-rule="evenodd" d="M5.438 6.75h10.7L4.983 17.906l1.326 1.328 11.13-11.13V18.75h1.875V4.875H5.438V6.75Z" clip-rule="evenodd"></path></svg></div></div>
+     </div></div>
+          
+     </div></div>
+    </section>
+    <section>
+      <div class="container-fluid py-5  navbar-section">
+      
+        <div class="grid-5-7">
+          <div class=" ">
+            <h2  class="mt-5 mb-5">Meeting Agenda</h2>
+            <div class="custom-schedule-section">
+              
+              <!-- Tab Navigation -->
+              <ul class="nav nav-tabs custom-tabs" id="agendaTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <div class="nav-link" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="false" style="
+    position: relative;
+" tabindex="-1"><p class="text"> <b>Day-01</b>
+    <br> November 17, 2025</p>
+
+<span>
+
+<img src="./public/tab-icon.gif" class="tab-icon"> </span></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <div class="nav-link active" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button" role="tab" aria-controls="day1" aria-selected="true"><p class="text"><b>Day-02</b>
+    <br> November 18, 2025</p>
+<span>
+
+<img src="./public/tab-icon.gif" class="tab-icon"> </span>
+    </div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <div class="nav-link" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day3" type="button" role="tab" aria-controls="day1" aria-selected="false" tabindex="-1" style="
+    border-right: 0px;
+"><p class="text"><b>Day-03</b>
+    <br> November 19, 2025</p>
+    <span>
+
+<img src="./public/tab-icon.gif" class="tab-icon"> </span>
+    
+    <div></div></div>
+                </li>
+              </ul>
+      
+              <!-- Tab Content -->
+              <div class="tab-content" id="agendaTabsContent">
+                <!-- Day 1 -->
+                <div class="tab-pane fade" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time mt-3">08:00-09:00</div>
+                    <div class="custom-schedule-col-event mt-3">Registrations</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">09:00-09:30</div>
+                    <div class="custom-schedule-col-event">Inaugural Ceremony</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">09:30-10:30</div>
+                    <div class="custom-schedule-col-event">Keynote Session I</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">10:30-11:00</div>
+                    <div class="custom-schedule-col-event">
+                                                                Networking Break                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">11:00-12:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Keynote Session II                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">12:30-13:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Lunch                                                            </div>
+                  </div><!-- Add more rows for Day 1 as needed -->
+                </div>
+      
+                <!-- Day 2 -->
+                <div class="tab-pane fade active show" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                  <div class="custom-schedule-row m">
+                    <div class="custom-schedule-col-time mt-3">09:00-10:30</div>
+                    <div class="custom-schedule-col-event mt-3">Keynote Session III</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">10:30-11:00</div>
+                    <div class="custom-schedule-col-event">Networking Break</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">11:00-12:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Oral Presentations III                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">12:30-13:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Lunch                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">11:00-12:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Oral Presentations III                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">13:30-15:00</div>
+                    <div class="custom-schedule-col-event">
+                                                                Poster Presentations                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">15:00-15:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Networking Break                                                            </div>
+                  </div><!-- Add more rows for Day 2 as needed -->
+                </div>
+      
+                <!-- Day 3 -->
+                <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                  <div class="custom-schedule-row mt-3">
+                    <div class="custom-schedule-col-time">09:00-10:30</div>
+                    <div class="custom-schedule-col-event">Keynote Session IV</div>
+                  </div>
+                  <div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">10:30-11:00</div>
+                    <div class="custom-schedule-col-event">Networking Break</div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">11:00-12:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Oral Presentations III                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">12:30-13:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Lunch                                                            </div>
+                  </div><div class="custom-schedule-row">
+                    <div class="custom-schedule-col-time">11:00-12:30</div>
+                    <div class="custom-schedule-col-event">
+                                                                Oral Presentations VI                                                            </div>
+                  </div>
+                  <!-- Add more rows for Day 3 as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class=" custom-col-7">
+                  <div class="custom-signup-section custom-mt-95">
+                      <div class="custom-container-fluid">
+                          <div class="custom-signup-wrapper">
+              
+                              <div class="custom-signup-content">
+                                  <div class="custom-signup-container">
+              
+                                      <div class="custom-content-text">
+                                          <h6><img src="https://www.transparentpng.com/thumb/lines/rNEwAu-lines-wonderful-picture-images.png" width="50px" height="2px" class="line" style="
+      background-color: #ffffff;
+     "> &nbsp; GET UPDATES</h6>
+                                          <h3>Sign up for Updates</h3>
+                                      </div>
+              
+                                      <form id="custom_signup_form" method="post">
+                                          <div class="custom-signup-row">
+                                              <div class="custom-signup-col-6">
+                                                  <input type="text" name="first_name" id="first_name" placeholder="First Name" required="" style="
+    position: relative;
+" class="input_fleid"><i class="bi bi-person-fill icon_start"></i> 
+                                                  <span></span>
+                                              </div>
+                                              <div class="custom-signup-col-6">
+                                                  <input type="text" name="last_name" id="last_name" placeholder="Last Name" required="" class="input_fleid">
+                                                  <span><i class="bi bi-person-fill icon_start"></i></span>
+                                              </div>
+                                          </div>
+                                          <div class="custom-signup-row">
+                                              <div class="custom-signup-col-12">
+                                                  <input type="text" name="phone" id="phone" placeholder="Phone" class="input_fleid">
+                                                  <span><i class="bi bi-telephone-fill icon_start"></i></span>
+                                              </div>
+                                          </div>
+                                          <div class="custom-signup-row">
+                                              <div class="custom-signup-col-12">
+                                                  <input type="email" name="sign_email" id="sign_email" class="custom-email-field input_fleid" placeholder="Email" required="">
+                                                  <span><i class="bi bi-envelope-fill icon_start"></i></span>
+                                              </div>
+                                          </div>
+                                          <div class="custom-signup-row">
+                                              <div class="custom-signup-col-6" id="custom-cap-img">
+                                                  <img src="./public/1735815606.7467.jpg" class="captcha-img" alt="Antispam Code">
+                                                  <a title="reload" class="custom-reload-captcha" href="javascript:relod();">Generate new code</a>
+                                              </div>
+              
+                                              <div class="custom-signup-col-6">
+                                                  <input type="text" class="form-control required" required="" name="captchcode" placeholder="Enter Answer" id="captchcode" aria-required="true">
+                                                  <label id="captchcode-error" class="error" for="message" style="display:none;"></label>
+                                              </div>
+                                          </div>
+                                          <div class="custom-signup-row">
+                                              <div class="custom-signup-col-12">
+                                                  <input type="submit" value="Sign Up" class="custom-signup-button">
+                                              </div>
+                                          </div>
+                                      </form>
+              
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    
+                  </div>
+              </div>
+                </div>
+        </div>
+      
+    </section>
+    <section>
+      <div class="container py-4">
+        <h2 class="text-center"> CITY ATTRACTIONS </h2>
+        <div class="mt-5 Box_flex" style="
+        width: 86%;
+        margin: 0 auto;
+    ">
+          <div class="card_1">
+            <img src="./public/gardens-by-the-bay-5424.jpg" width="100%" class="img_city" style="
+        position: relative;
+    ">
+          <span style="font-size: 10px;font-weight: 500;letter-spacing: 1px;"><div class="span_btn">Gardens by the Bay</div></span><div style="
+    ">  
+    <p class="CITY_Text">Gardens by the Bay is a world- renowned horticultural  destination in the heart  of Singapore, offering a blend of nature,</p>
+            
+          </div></div>
+        <div class="card_1">
+            <img src="./public/marina-bay-sands-2636.jpg" width="100%" style="
+        position: relative;
+    " class="img_city">
+          <span style="font-size: 10px;font-weight: 500;letter-spacing: 1px;"><div class="span_btn">Marina Bay Sands</div></span><div style="
+    ">  
+    <p class="CITY_Text">Marina Bay Sands in Singapore is an architectural marvel and one of the world’s most luxurious and breathtaking destin...</p>
+            
+          </div></div><div class="card_1">
+            <img src="./public/merlion-park-7207.jpg" width="100%" style="
+        position: relative;
+    " class="img_city">
+          <span style="font-size: 10px;font-weight: 500;letter-spacing: 1px;"><div class="span_btn" style="padding: 13px 39px;">Merlion Park</div></span><div style="
+    ">  
+    <p class="CITY_Text">Merlion Park is one of Singapore's most iconic attractions, drawing both locals and tourists alike to its stunning water</p>
+            
+          </div></div><div class="card_1">
+            <img src="./public/sentosa-island-9041.jpg" width="100%" style="
+        position: relative;
+    " class="img_city">
+          <span style="font-size: 10px;font-weight: 500;letter-spacing: 1px;"><div class="span_btn" style="
+        padding: 13px 32px;
+    ">Sentosa Island</div></span><div>  
+    <p class="CITY_Text">Sentosa Island is Singapore’s premier island getaway, offering a diverse range of attractions, from pristine beaches..</p>
+         
+          </div></div></div>
+    
+    
+    <div class="Button_Center"><button class="btn btn-primary mt-5" type="button" style="
+    ">View All</button></div>
+      
+    
+    </div>
+    </section>
+
+
+    <footer>
+      <div class="container-fluid bg_bg_color">
+          <div class="container">
+          <div class="row">
+  <div class="col-md-5">
+   <div class=" custom-get-in-touch">
+                          <h2 style="
+      text-align: left;
+      color: white;
+      margin-bottom: 26px;
+  ">conference organizer</h2>
+                          <div class="custom-org-logo">
+                              <img src="https://cancer.miconferences.com/assets-front/img/organizer-logo-white.png" alt="" style="width:50%;"> 
+                          </div>
+                          <div class="custom-address">
+                              <p class="Box_flex" style="
+      gap: 10px;
+      margin-top: 12px;
+  "> 
+                                  <span><i class="bi bi-geo-alt-fill" style="
+      color: white;
+  "></i> </span> 
+                                  <span style="
+      color: white;
+      margin-top: 3px;
+  ">55 E. Monroe Street, Suite 3800<br> Chicago IL, USA, 60603</span>
+                              </p> 
+                          </div>
+                          <div class="custom-email">
+                              <p class="Box_flex" style="
+      gap: 10px;
+      margin-top: 3px;
+  "> 
+                                  <span><i class="bi bi-envelope-fill" style="
+      color: white;
+  "></i> </span> 
+                                  <span style="
+      color: white;
+      margin-top: 3px;
+  ">Info@gmail.com</span>
+                              </p>
+                          </div>
+                          <div class="custom-phone">
+                              <p class="Box_flex" style="
+      gap: 10px;
+      margin-top: 3px;
+  "> 
+                                  <span><i class="bi bi-envelope-fill" style="
+      color: white;
+  "></i> </span> 
+                                  <span style="
+      color: white;
+      margin-top: 3px;
+  ">+91 98679983409</span>
+                              </p>
+                          </div>
+                      </div>
+  </div>
+              
+          <div class="col-md-2">
+  <h2 style="
+      text-align: left;
+      color: white;
+      margin-bottom: 26px;
+  ">
+  Quick Links</h2><p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp;Home</p>
+  
+  <p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp; About</p><p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp; Programme</p><p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp; Abstract</p><p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp; Register </p><p style="
+      color: white;
+  "> <i class="bi bi-arrow-right-short" style="
+      font-size: 25px;
+  "></i> &nbsp; Contact</p></div><div class="col-md-1">
+  </div><div class="col-md-4">
+  
+  <h2 style="
+      color: white;
+      text-align: left;
+      margin-bottom: 29px;
+  ">Connect with us</h2>
+  
+  <p style="
+      color: white;
+  "><b>Email: </b> cancer@mathewsconference.com</p>
+  
+  
+  
+  
+  <p style="
+      color: white;
+      margin-top: 5px;
+  "><b>Phone:</b> +1 (312) 462-4448</p><p style="
+      color: white;
+      margin-top: 5px;
+  "><b>Whatsapp:</b> +1 (424) 377 0967</p>
+  
+  <h4 style="
+      color: white !important;
+      margin-top: 20px;
+  ">Social Links</h4><div class="Box_flex">
+      <div class="icon-border">
+      <i class="bi bi-facebook" style="
+      color: white;
+  "></i>
+  </div><div class="icon-border">
+      <i class="bi bi-twitter" style="
+      color: white;
+  "></i>
+  </div></div></div></div>
+      </div></div></footer>
+
+      <div class="container-fluid  bg_bg_color" style="
+      background: #CB2578 !important;
+      padding: 13px;
+  ">
+          <div class="container">
+          <div class="row">
+  <div class="col-md-8">
+   <div class=" custom-get-in-touch">
+                          
+                          
+                    <p style="
+      color: white;
+  ">Copyright 2024 Mathews International LLC All Rights Reserved </p>      
+                          
+                          
+                      </div></div>
+  
+              
+          <div class="col-md-4">
+  <p style="color: white;">Terms and Conditions | Privacy Policy</p>
+  
+  </div>
+      </div></div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
